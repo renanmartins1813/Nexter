@@ -1,6 +1,6 @@
 @use "base";
 
 .header {
-  grid-column: full-start / full-end;
+  grid-column: full-start / col-end 6;
   background-color: base.$color-grey-dark-1;
 }

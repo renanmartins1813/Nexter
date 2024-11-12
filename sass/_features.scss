@@ -1,0 +1,6 @@
+@use "base";
+
+.features {
+  grid-column: center-start / center-end;
+  background-color: base.$color-grey-light-2;
+}
