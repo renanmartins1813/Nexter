@@ -1,0 +1,6 @@
+@use "base";
+
+.homes {
+  grid-column: center-start / center-end;
+  background-color: base.$color-secondary;
+}

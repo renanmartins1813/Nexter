@@ -1,0 +1,6 @@
+@use "base";
+
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  background-color: base.$color-primary;
+}

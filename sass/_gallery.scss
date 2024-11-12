@@ -1,0 +1,6 @@
+@use "base";
+
+.gallery {
+  grid-column: full-start / full-end;
+  background-color: base.$color-grey-dark-1;
+}
