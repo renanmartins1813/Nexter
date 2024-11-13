@@ -43,6 +43,10 @@ body {
 .features {
   grid-column: center-start/center-end;
   background-color: #aaa;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  margin: 15rem 0;
 }
 
 .story__pictures {
