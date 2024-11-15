@@ -2,5 +2,31 @@
 
 .realtors {
   grid-column: col-start 7 / full-end;
+  display: grid;
+  row-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  padding: 3rem;
+
   background-color: base.$color-secondary;
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 2rem;
+    row-gap: 5vh;
+    align-items: center;
+  }
+
+  &__img {
+    width: 7rem;
+    border-radius: 100%;
+  }
+
+  &__sold {
+    text-transform: uppercase;
+    color: base.$color-grey-light-2;
+    margin-top: -3px;
+  }
 }
