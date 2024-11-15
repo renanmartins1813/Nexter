@@ -2,5 +2,41 @@
 
 .footer {
   grid-column: full-start / full-end;
+  padding: 8rem;
   background-color: base.$color-secondary;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+  list-style-type: none;
+
+  &__link:link,
+  &__link:visited {
+    display: block;
+    font-size: 1.4rem;
+    font-family: base.$font-display;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    margin: 0;
+    color: #fff;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba($color: #fff, $alpha: 0.05);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: base.$color-grey-light-2;
+  margin-top: 6rem;
+  text-align: center;
 }
