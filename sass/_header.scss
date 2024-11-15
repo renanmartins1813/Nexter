@@ -2,5 +2,53 @@
 
 .header {
   grid-column: full-start / col-end 6;
-  background-color: base.$color-grey-dark-1;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  row-gap: 1.5rem;
+  justify-content: center;
+  padding: 8rem;
+  padding-top: 4rem;
+  background-image: linear-gradient(rgba(base.$color-secondary, 0.93), rgba(base.$color-secondary, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  &__bnt {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__logo {
+    height: 3rem;
+    justify-self: center;
+  }
+
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: base.$color-grey-light-2;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    justify-items: center;
+
+    img {
+      height: 2.5rem;
+      filter: brightness(70%);
+    }
+  }
 }
