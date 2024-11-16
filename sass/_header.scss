@@ -3,8 +3,8 @@
 .header {
   grid-column: full-start / col-end 6;
   display: grid;
-  grid-template-columns: max-content;
-  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
   row-gap: 1.5rem;
   justify-content: center;
   padding: 8rem;
@@ -45,9 +45,11 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3rem;
     justify-items: center;
+    align-items: center;
 
     img {
-      height: 2.5rem;
+      max-width: 100%;
+      max-height: 2.5rem;
       filter: brightness(70%);
     }
   }
